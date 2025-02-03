@@ -1,0 +1,15 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  background-color: yellow;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,9 @@
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: yellow;
+  font-size: 36px;
+}

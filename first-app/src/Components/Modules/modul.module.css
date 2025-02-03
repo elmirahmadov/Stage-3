@@ -1,0 +1,18 @@
+.moduleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 250px;
+  border: 2px solid black;
+  box-shadow: 0 2px 3px #ccc;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.paragraf {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+}
