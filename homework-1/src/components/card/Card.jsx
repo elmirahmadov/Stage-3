@@ -3,8 +3,16 @@ import PropTypes from "prop-types";
 import defaultİmage from "../../assets/images/default.jpg";
 
 function Card(props) {
-  const { images, productName, stock, price, unit, description, currency } =
-    props;
+  const {
+    images,
+    productName,
+    stock,
+    price,
+    unit,
+    description,
+    currency,
+    colorHover,
+  } = props;
 
   return (
     <div className={styles.card}>
@@ -12,7 +20,7 @@ function Card(props) {
         src={images || defaultİmage}
         alt={productName || "No product name"}
       />
-      <div className={styles.products}>
+      <div className={`${styles.products} ${styles[colorHover]}`}>
         <div>Name : {productName || "Not Available"}</div>
         <div>Price : {price ? `${price} ${currency}` : "No Price"} </div>
         <div>Stock :{stock ? `${stock} ${unit || ""}` : "Out of Stock"}</div>
@@ -32,4 +40,5 @@ Card.propTypes = {
   images: PropTypes.string.isRequired,
   unit: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
+  colorHover: PropTypes.string,
 };

@@ -17,6 +17,7 @@ function Main() {
           unit="ədəd"
           currency="₼"
           description="Kənd yumurtası"
+          colorHover="red"
         />
         <Card
           images={bananİmage}
@@ -26,6 +27,7 @@ function Main() {
           unit="kg"
           currency="₼"
           description="Təzə banan"
+          colorHover="green"
         />
         <Card
           images={almaİmage}
@@ -35,6 +37,7 @@ function Main() {
           unit="kg"
           currency="$"
           description="Qırmızı alma"
+          colorHover="yellow"
         />
         <Card
           images={nutellaİmage}
@@ -44,6 +47,7 @@ function Main() {
           unit="ədəd"
           currency="₺"
           description="Şokalad və Vanilyalı"
+          colorHover="blue"
         />
         <Card
           images=""
@@ -55,7 +59,6 @@ function Main() {
           description=""
         />
       </div>
-      <div className={styles.list}></div>
     </div>
   );
 }

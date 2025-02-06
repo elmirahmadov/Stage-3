@@ -20,6 +20,18 @@
   gap: 20px;
 }
 
-.products div:hover {
+.blue div:hover {
   color: blue;
+}
+
+.red div:hover {
+  color: red;
+}
+
+.green div:hover {
+  color: green;
+}
+
+.yellow div:hover {
+  color: yellow;
 }
