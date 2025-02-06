@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:hover {
+  color: blue;
+  transition: color 0.3s ease;
+}
+.loginButton {
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.loginButton:hover {
+  background-color: blue;
+  color: white;
+
+  transition: background-color 0.3s ease;
+}

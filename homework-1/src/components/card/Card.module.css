@@ -1,0 +1,25 @@
+.card {
+  width: 350px;
+  height: 500px;
+  border: 2px solid red;
+  border-radius: 12px;
+}
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.products {
+  font-size: 24px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.products div:hover {
+  color: blue;
+}
