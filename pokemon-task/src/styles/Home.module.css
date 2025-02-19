@@ -1,0 +1,117 @@
+.container {
+  text-align: center;
+}
+
+.startBtn {
+  background-color: #c71585;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team {
+  display: flex;
+  background: #b0e0e6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  min-width: 400px;
+  min-height: 100px;
+  border-radius: 20px;
+}
+
+.vs {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pokemonGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.winner {
+  border: 3px solid green;
+  background: #d4edda;
+}
+
+.loser {
+  border: 3px solid red;
+  background: #f8d7da;
+}
+
+.draw {
+  border: 3px solid orange;
+  background: #fff3cd;
+}
+
+.winText {
+  color: green;
+  font-weight: bold;
+}
+
+.loseText {
+  color: red;
+  font-weight: bold;
+}
+
+.drawText {
+  color: orange;
+  font-weight: bold;
+}
+
+.normal {
+  background-color: white;
+  color: black;
+  border-radius: 12px;
+}
+
+.electric {
+  background-color: yellow;
+  color: black;
+  border-radius: 12px;
+}
+
+.fire {
+  background-color: red;
+  color: white;
+  border-radius: 12px;
+}
+
+.water {
+  background-color: lightblue;
+  color: darkblue;
+  border-radius: 12px;
+}
+
+.bug {
+  background-color: lightgreen;
+  color: darkgreen;
+  border-radius: 12px;
+}
+
+.flying {
+  background-color: lightgray;
+  color: darkgray;
+  border-radius: 12px;
+}
+
+.poison {
+  background-color: purple;
+  color: white;
+  border-radius: 12px;
+}
