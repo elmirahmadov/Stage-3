@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./PokemonCard.module.css";
 
 const PokemonCard = ({ pokemon }) => {
-  // ID'yi üç haneli formata çevir (ör: 004, 025, 094)
   const formatId = (id) => id.toString().padStart(3, "0");
 
   return (

@@ -16,3 +16,7 @@ button:hover {
   background-color: blue;
   color: white;
 }
+
+.Container {
+  display: flex;
+}
