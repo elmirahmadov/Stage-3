@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Count.module.css";
-import Button from "./button";
+import Button from "./Button";
 
 function Caunt() {
   const initialState = { count: 0, text: "" };
