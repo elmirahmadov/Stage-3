@@ -1,0 +1,183 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.successCard {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.successIconContainer {
+  margin-bottom: 2rem;
+}
+
+.successIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #e8f5e9;
+  color: #4caf50;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.5s ease-out;
+}
+
+.successIcon::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #4caf50;
+  animation: pulse 2s infinite;
+}
+
+.successIcon.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s 0.4s both;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s 0.6s both;
+}
+
+.orderInfo {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s 0.8s both;
+}
+
+.orderInfoItem {
+  margin-bottom: 0.8rem;
+}
+
+.orderInfoItem:last-child {
+  margin-bottom: 0;
+}
+
+.orderInfoLabel {
+  display: inline-block;
+  width: 130px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.orderInfoValue {
+  color: #1a237e;
+  font-weight: bold;
+}
+
+.instructions {
+  color: #666;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s 1s both;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  animation: fadeInUp 0.8s 1.2s both;
+}
+
+.orderDetailsButton,
+.continueShoppingButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.orderDetailsButton {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.orderDetailsButton:hover {
+  background-color: #e0e0e0;
+}
+
+.continueShoppingButton {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+}
+
+.continueShoppingButton:hover {
+  background-color: #303f9f;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .successCard {
+    padding: 2rem 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .orderInfoLabel {
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 0.2rem;
+  }
+}

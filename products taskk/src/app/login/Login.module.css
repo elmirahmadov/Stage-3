@@ -1,0 +1,233 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formCard {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #f9f9f9;
+}
+
+.activeTab {
+  color: #1a237e;
+  border-bottom: 3px solid #1a237e;
+}
+
+.formContainer {
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.formGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.formGroup input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.formGroup input:focus {
+  border-color: #1a237e;
+  outline: none;
+}
+
+.errorInput {
+  border-color: #f44336 !important;
+}
+
+.errorMessage {
+  color: #f44336;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.errorAlert {
+  background-color: #ffebee;
+  color: #f44336;
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.forgotPassword {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.forgotPassword a {
+  color: #1a237e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgotPassword a:hover {
+  color: #303f9f;
+  text-decoration: underline;
+}
+
+.submitButton {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #303f9f;
+}
+
+.submitButton:disabled {
+  background-color: #9fa8da;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #666;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.divider span {
+  padding: 0 10px;
+  font-size: 0.9rem;
+}
+
+.socialButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.socialButton {
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.socialButton:hover {
+  opacity: 0.9;
+}
+
+.googleButton {
+  background-color: #4285f4;
+  color: white;
+}
+
+.facebookButton {
+  background-color: #3b5998;
+  color: white;
+}
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.checkbox {
+  margin-top: 0.2rem;
+}
+
+.terms a {
+  color: #1a237e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.terms a:hover {
+  color: #303f9f;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .formContainer {
+    padding: 1.5rem;
+  }
+}

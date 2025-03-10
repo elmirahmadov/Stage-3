@@ -1,0 +1,112 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.productCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.productImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.productImage {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.productInfo {
+  text-align: center;
+}
+
+.productName {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.productBrand {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.productRating {
+  margin-bottom: 10px;
+}
+
+.filledStar {
+  color: #ffc107;
+}
+
+.emptyStar {
+  color: #ddd;
+}
+
+.ratingValue {
+  margin-left: 5px;
+  color: #666;
+}
+
+.productPrice {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.loading,
+.error,
+.noProducts {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #666;
+}
