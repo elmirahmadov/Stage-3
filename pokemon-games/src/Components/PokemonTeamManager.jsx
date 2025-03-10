@@ -88,7 +88,7 @@ const PokemonTeamManager = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Pokemon Team Manager</h1>
+      <h1 className={styles.title}>Pokémon Team Manager</h1>
 
       <div className={styles.selectionArea}>
         {displayedPokemon.map((pokemon) => {
@@ -130,7 +130,7 @@ const PokemonTeamManager = () => {
         })}
       </div>
 
-      <h2 className={styles.sectionTitle}>Your Pokemon Team</h2>
+      <h2 className={styles.sectionTitle}>Your Pokémon Team</h2>
       <div className={styles.teamContainer}>
         {team.map((pokemon) => {
           const typeDetails = getTypeDetails(pokemon.type);
@@ -185,9 +185,9 @@ const PokemonTeamManager = () => {
       </div>
 
       <div className={styles.totalCount}>
-        Total Pokemon in Team: {totalCount}
+        Total Pokémon in Team: {totalCount}
       </div>
-      <h3 className={styles.tableTitleText}>Individual Pokemon Count</h3>
+      <h3 className={styles.tableTitleText}>Individual Pokémon Count</h3>
       <table className={styles.countTable}>
         <thead>
           <tr>

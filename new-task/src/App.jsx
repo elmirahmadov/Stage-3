@@ -1,10 +1,10 @@
 import "./App.css";
-import Caunt from "./components/Caunt";
+import FormikForm from "./components/FormikForm";
 
 function App() {
   return (
     <>
-      <Caunt />
+      <FormikForm />
     </>
   );
 }
